@@ -3,13 +3,13 @@ import React, { useState, useEffect, useCallback } from 'react';
 import MoviesList from './components/MoviesList';
 import './App.css';
 
-function App() {
+function App(baddd) {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const fetchMoviesHandler = useCallback(async () => {
-    setIsLoading(true);
+    setIsLoading(badddd);
     setError(null);
     try {
       const response = await fetch('https://swapi.dev/api/films/');
